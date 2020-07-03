@@ -1,9 +1,9 @@
-# color-palette-generator [![Build Status](https://travis-ci.org/Dr-TIS/color-palette-generator.svg?branch=master)](https://travis-ci.org/Dr-TIS/color-palette-generator)
+# drtis-color-palette-generator [![Build Status](https://travis-ci.org/Dr-TIS/color-palette-generator.svg?branch=master)](https://travis-ci.org/Dr-TIS/color-palette-generator)
 
 ## Example
 
 ```js
-const colorGen = require("color-palette-generator"); // colorGen(baseColor, numberOfColorsToGenerate, mixOutput)
+const colorGen = require("drtis-color-palette-generator"); // colorGen(baseColor, numberOfColorsToGenerate, mixOutput)
 
 console.log(colorGen("#D60000", 12)); // [ '#D60000', '#D64700', '#D68F00', '#D6D600', '#8FD600', '#47D600', '#00D600', '#00D647', '#00D68F', '#00D6D6', '#008FD6', '#0047D6' ]
 
