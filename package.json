@@ -1,23 +1,24 @@
 {
   "name": "color-palette-generator",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=14.4.0"
+  },
   "scripts": {
     "lint": "standard",
-    "test": "yarn run lint && yarn run build && ava",
+    "test": "yarn run build && ava",
     "build": "BABEL_ENV=production babel lib --out-dir dist",
     "postinstall": "npm run build"
   },
   "author": "Tibor Vukovic <m@tib.im>",
   "license": "ISC",
   "dependencies": {
-    "ava": "^1.0.1",
-    "babel-cli": "^6.24.1",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "color": "^3.0.0",
-    "standard": "^11.0.0"
+    "ava": "^3.9.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "color": "^3.1.2"
   },
   "ava": {
     "files": [
@@ -27,8 +28,7 @@
   },
   "babel": {
     "presets": [
-      "es2015",
-      "stage-0"
+      "env"
     ]
   },
   "files": [
@@ -37,6 +37,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/tiborv/color-palette-generator.git"
+    "url": "https://github.com/Dr-TIS/color-palette-generator.git"
   }
 }

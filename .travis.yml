@@ -1,9 +1,9 @@
 language: node_js
 node_js:
-- 12
+  - 14
 deploy:
   provider: npm
-  email: "m@tib.im"
+  email: "bruno.barreto@drtis.com.br"
   api_key:
     secure: $API_KEY
   on:
